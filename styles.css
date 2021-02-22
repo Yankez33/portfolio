@@ -1,3 +1,106 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* Navbar */
+
+.logo_header {
+  position: relative;
+  height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.logo {
+  height: 50px;
+  width: 40px;
+  margin-left: 25px;
+  background-image: url(./images/trm_logo.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 42px auto;
+  vertical-align: middle;
+}
+
+.logo-text {
+    color: #9b0101;
+    margin-right: 30px;
+    padding-right: 25px;
+    font-weight: 500;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color:#9b0101;
+}
+
+.navbar {
+    background-color: #ebebeb;
+}
+
+.navbar-toggler {
+  font-size: 16px;
+}
+
+.nav_menu {
+  padding: 12px 0;
+  margin:0 80px;
+  color: #484848;
+  font-size: 20px;
+}
+
+.menu_item {
+  display: block;
+  color: #393e46;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight:500;
+}
+
+.menu_item:hover {
+  text-decoration: none;
+  color: #ebebeb;
+  background-color: #9b0101;
+  text-decoration: underline;
+}
+
+
+.menu_text {
+  padding-top: 5px;
+  margin-right: 50px;
+}
+
+/* dropdown menu */
+
+@media (max-width: 992px) {
+  #navbarDropdown {
+    position: fixed;
+    top: 25px;
+    padding: 20px 0;
+    z-index: 1;
+    cursor: default;
+    width: 100%;
+    border-radius: 0%;
+  }
+
+  .menu_item {
+    display: block;
+    color: #484848;
+    text-align: center;
+    /* background-color: #fff; */
+  }
+}
+
+@media (max-width: 500px) {
+    .menu_item {
+        background-color: #ebebeb;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+}
+
+    /* #navbarDropdown {
+        max-width: 100%;
+    } */
+}
