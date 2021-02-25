@@ -22,39 +22,51 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg logo_header">
-        <div>
-            <a href="#" class="navbar-brand logo"></a>
-            <a href="#" class="logo-text">Web Developments</a>
-        </div>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
+    <!-- Navbar-->
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5">
+            <a href="#home" class="navbar-brand text-muted">Tim Maycock</a>
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto text-capitalize ">
+                    <li class="nav-item ">
+                        <a href="#home" class="nav-link text-muted">home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#about" class="nav-link text-muted">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#featured" class="nav-link text-muted">skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link text-muted">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link text-muted">contact</a>
+                    </li>
+                </ul>
 
-        <!-- mobile menu -->
+            </div>
+        </nav>
+        <!-- End of navbar-->
 
-        <div class="collapse navbar-collapse nav_menu ml-auto" id="navbarDropdown">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li><a href="#" class="menu_item menu_text ">Home</a></li>
-                <li><a href="#" class="menu_item menu_text ">About</a></li>
-                <li><a href="#" class="menu_item menu_text ">Skills</a></li>
-                <li><a href="#" class="menu_item menu_text ">Projects</a></li>
-                <li><a href="#" class="menu_item menu_text ">Contact</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
-
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
+        <!-- Main section -->
+        <div class="container-fluid main-section">
+            <div class="row">
+                <div class="col-12 bg-image">
+                    <span class="text">Web Developer</span>
+                    <img src="images/main-laptop.jpg" alt="" class="img-responsive img-fluid">
+                </div>
+            </div>
+        </div> <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
 
 
 </body>
