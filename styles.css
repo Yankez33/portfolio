@@ -27,7 +27,7 @@ body {
 
 /* End of Navbar*/
 
-/* Main Section */
+/* Banner Section */
 
 .main-section {
   background-color:#7e7474
@@ -73,8 +73,50 @@ body {
 }
  /* End of Main Section */
 
+/* About section */
 
+.about-container {
+  background-color: #ebebeb;
+  box-shadow: 0 0 20px black;
+}
 
+.about-pic {
+  height: 300px;
+  width: 300px;
+  margin-left: 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+/* Skills Section */
+.skills-container {
+      width: 90%;
+      background-color: rgb(231, 231, 231);
+      border-radius: 20px;
+   }
+
+   .html, .css, .python, .js {
+      text-align: center;
+      font-weight: 300;
+      color: white;
+      border-radius: 20px;
+   }
+   .html {
+      width: 80%;
+      background-color: #4caf50;
+   }
+   .css {
+      width: 70%;
+      background-color: #2196f3;
+   }
+   .python {
+      width: 65%;
+      background-color: #f44336;
+   }
+   .js {
+      width: 50%;
+      background-color: #808080;
+   }
 
 
 

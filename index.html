@@ -23,7 +23,7 @@
 
 <body>
     <!-- Navbar-->
-    <header id="home">
+    <div id="home">
         <nav class="navbar navbar-expand-lg navbar-dark px-5">
             <a href="#home" class="navbar-brand text-muted">Tim Maycock</a>
             <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#myNavbar">
@@ -38,7 +38,7 @@
                         <a href="#about" class="nav-link text-muted">about</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#featured" class="nav-link text-muted">skills</a>
+                        <a href="#skills" class="nav-link text-muted">skills</a>
                     </li>
                     <li class="nav-item">
                         <a href="#services" class="nav-link text-muted">projects</a>
@@ -52,7 +52,7 @@
         </nav>
         <!-- End of navbar-->
 
-        <!-- Main section -->
+        <!-- Banner section -->
         <div class="container-fluid main-section">
             <div class="row">
                 <div class="col-12 bg-image">
@@ -60,7 +60,46 @@
                     <img src="images/main-laptop.jpg" alt="" class="img-responsive img-fluid">
                 </div>
             </div>
-        </div> <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        </div>
+        <!-- End of Banner Section -->
+
+        <!-- About / Skills Section -->
+        <div class="container">
+            <div class="row about-container my-5">
+                <div class="col-lg-4 my-5">
+                    <img src="images/about-pic.jpeg" alt="" class="img-fluid img-thumbnail about-pic ">
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h4 class=" mb-3" id="about">About Me</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum et tortor at lacinia.
+                        Fusce a fermentum odio. Quisque sagittis imperdiet convallis. Duis blandit risus scelerisque
+                        lectus pharetra faucibus. Quisque commodo mattis justo in pharetra. Sed consectetur urna
+                        consectetur scelerisque dapibus. Duis vitae tincidunt arcu. Nulla et dapibus erat.</p>
+                </div>
+                <div class="col-lg-4" id="skills">
+                    <h4 class="mt-5 mb-3">My Skills</h4>
+                    <h6>Html</h6>
+                    <div class="skills-container mt-2">
+                        <p class="html mb-2">80%</p>
+                    </div>
+                    <h6>CSS</h6>
+                    <div class="skills-container">
+                        <p class="css mb-2">70%</p>
+                    </div>
+                    <h6>Javascript</h6>
+                    <div class="skills-container mb-3">
+                        <p class="js mb-2">40%</p>
+                    </div>
+                    <h6>Python</h6>
+                    <div class="skills-container">
+                        <p class="python mb-2">60%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
