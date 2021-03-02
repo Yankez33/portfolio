@@ -1,28 +1,31 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
 }
 
 
 /* Navbar */
 .navbar {
-  position: static;
+  position: fixed;
   z-index: 1;
-     background: #252525 !important; 
+  background: #252525 !important; 
 }
 
  .nav-link {
-   color: #e8eae6;
+   color: #e8eae6 !important;
    margin-right: 70px;
    padding-left: 25px;
  }  
 
 .nav-link:hover {
     text-decoration-line: underline;
-    color: #fff !important; 
+    color: #931a25 !important; 
+    font-weight: 500;
 }
 
 .navbar-brand {
   font-size: 24px;
+  color: #e8eae6;
 }
 
 /* End of Navbar*/
@@ -35,7 +38,7 @@ body {
 
 .bg-image {
   position: bottom no-repeat cover;
-  margin: -2px;
+  /* margin: -2px; */
   padding: 0;
   height: 100%;
 }
@@ -45,7 +48,6 @@ body {
     top: 15%; 
     right: 50%;
     transform: translate(50%,-50%);
-    /* text-transform: uppercase; */
     font-family: roboto;
     font-size: 55px;
     font-weight: 700;
@@ -66,11 +68,7 @@ body {
     1px 30px 60px rgba(16,16,16,0.4); 
 }
 
-@media (max-width: 780px) {
-  .text {
-    font-size: 32px;
-  }
-}
+
  /* End of Main Section */
 
 /* About section */
@@ -83,23 +81,55 @@ body {
 .about-pic {
   height: 300px;
   width: 300px;
-  margin-left: 35px;
+  margin-left: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px black;
 }
 
+.about-text {
+font-size: 24px;
+
+}
+
+@media (max-width: 992px) {
+  .about-pic {
+   margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-pic {
+   margin-left: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-pic {
+   margin-left: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-container {
+    padding-bottom: 35px;
+  }
+}
+
 /* Skills Section */
+
 .skills-container {
-      width: 90%;
-      background-color: rgb(231, 231, 231);
+      width: 80%;
+      background-color: #ebebeb;
       border-radius: 20px;
    }
 
-   .html, .css, .python, .js {
+   .html, .css, .python, .js, .linux {
       text-align: center;
+      font-size: 14px;
       font-weight: 300;
       color: white;
       border-radius: 20px;
+      line-height: 1;
    }
    .html {
       width: 80%;
@@ -118,5 +148,38 @@ body {
       background-color: #808080;
    }
 
+   .linux {
+      width: 25%;
+      background-color: #f0a500;
+   }
 
+   .projects-container {
+     background-color: #ebebeb;
+   }
+
+   .projects-title {
+     text-align: center;
+     padding: 15px;
+     font-size:24px;
+   }
+
+  .card { 
+    border: 1px solid #000;
+    /* background-color: #fbf7f0; */
+    text-align: center;
+  }
+  
+
+  .card-img-top {
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .project-button:hover {
+    color: #808080;
+    background-color: #fff;
+    transform:matrix(1.2);
+  }
+
+ 
 
