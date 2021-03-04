@@ -24,30 +24,26 @@
 <body>
     <!-- Navbar-->
     <div id="home">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-5">
+        <nav class="navbar navbar-expand-md fixed-top px-5">
             <a href="#home" class="navbar-brand">Tim Maycock</a>
-            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#myNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button type="button" class="navbar-toggler mb-4" data-toggle="collapse" data-target="#myNavbar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav mx-auto text-capitalize ">
+                <ul class="navbar-nav mx-auto text-capitalize">
                     <li class="nav-item ">
-                        <a href="#home" class="nav-link text-muted">home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#about" class="nav-link text-muted">about</a>
+                        <a href="#about" class="nav-link">about</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#skills" class="nav-link text-muted">skills</a>
+                        <a href="#portfolio" class="nav-link">portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link text-muted">portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#gallery" class="nav-link text-muted">contact</a>
+                        <a href="#contact" class="nav-link">contact</a>
                     </li>
                 </ul>
-
             </div>
         </nav>
     </div>
@@ -57,70 +53,62 @@
     <div class="container-fluid main-section">
         <div class="row">
             <div class="col-12 bg-image">
-                <span class="text">Web Developer</span>
-                <img src="images/main-laptop.jpg" alt="" class="img-responsive img-fluid">
+                <span class="text ">Tim Maycock</span>
+                <span class="text2 pt-3">Front End Web Developer</span>
             </div>
         </div>
     </div>
     <!-- End of Banner Section -->
 
-    <!-- About / Skills Section -->
-    <div class="container about-container">
-        <div class="row my-5">
-            <div class="col-lg-4 my-5">
-                <img src="images/about-pic.jpeg" alt="" class="img-fluid img-thumbnail about-pic ">
+    <!-- About  Section -->
+    <div class="container  ">
+        <div class="row about-container my-5">
+            <div class="col-lg-5 my-5" id="about">
+                <img src="images/about-pic.jpeg" alt="" class="img-fluid img-thumbnail about-pic">
             </div>
-            <div class="col-lg-4 mt-5">
-                <h4 class="mb-3 about-text " id="about">About Me</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum et tortor at lacinia.
-                    Fusce a fermentum odio. Quisque sagittis imperdiet convallis. Duis blandit risus scelerisque
-                    lectus pharetra faucibus. Quisque commodo mattis justo in pharetra. Sed consectetur urna
-                    consectetur scelerisque dapibus. Duis vitae tincidunt arcu. Nulla et dapibus erat.</p>
-            </div>
-            <div class="col-lg-4" id="skills">
-                <h4 class="mt-5 mb-3">My Skills</h4>
-                <h6>Html</h6>
-                <div class="skills-container mt-2">
-                    <p class="html mb-2">80%</p>
-                </div>
-                <h6>CSS</h6>
-                <div class="skills-container">
-                    <p class="css mb-2">70%</p>
-                </div>
-                <h6>Javascript</h6>
-                <div class="skills-container mb-3">
-                    <p class="js mb-2">40%</p>
-                </div>
-                <h6>Python</h6>
-                <div class="skills-container">
-                    <p class="python mb-2">60%</p>
-                </div>
-                <h6>Linux</h6>
-                <div class="skills-container">
-                    <p class="linux mb-2">25%</p>
-                </div>
+            <div class=" col-lg-7 my-5">
+                <h3 class="mb-3 text-secondary about-title text-center">Hi there. I'm Tim</h3>
+                <p class="text-muted about-text">A detail oriented developer who isn’t willing to accept <strong><em>“
+                            It’s good enough”</em></strong> and always strives for a better end product.</p>
+                <p class="text-muted about-text">I've spent all my adult life as a finishing carpenter, and pay
+                    attention to the tiniest details and knowing that one piece out of sync can turn a Picasso into
+                    finger-paint.</p>
+                <p class="text-muted about-text">Having grown tired of banging nails all day, I decided to change
+                    careers. Being the technology nut I am, programming and Web Development seems like the obvious
+                    choice to me.
+                </p>
+                <p class="text-muted about-text">While still learning to be a developer, my strengths lie in the front
+                    end but I have a working knowledge of Python and how to apply it in the back end.</p>
+                <p class="text-muted about-text">I currently reside In Victoria B.C., Canada but long to live in the
+                    mountains, where nature is my backyard and a log cabin is my castle.</p>
+                <p class="text-muted about-text">Feel free to contact me through any of the social medai links at the
+                    bottom of this page or via my <a href="mailto:email@example.com">Email</a></p>
             </div>
         </div>
     </div>
 
+    <!-- Skills section -->
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+
     <!-- Projects -->
-    <div class="top-border"></div>
-    <div class="container-fluid projects-container mb-5">
+    <div class="container projects-container mb-5">
         <h1 class="projects-title" id="portfolio">Portfolio</h1>
         <div class="row ">
-            <div class="card col-lg-5 my-3 mx-auto " style="width: 18rem;">
+            <div class="card col-lg-5 mt-5 mx-auto " style="width: 18rem;">
                 <img src="images/grandmas.png" class="card-img-top w-90 img-fluid" alt="grandmas">
                 <div class="card-body">
-                    <h5 class="card-title">An online bakery that allows customers to order and have items delivered</h5>
                     <p class="card-text">HTML | CSS | Bootstrap</p>
                     <a href="https://grandmas-bootstrap.netlify.app/"
                         class="btn btn-secondary project-button col-6 mt-3" target="_blank">Preview</a>
                 </div>
             </div>
-            <div class="card col-lg-5 my-3 mx-auto " style="width: 18rem;">
+            <div class="card col-lg-5 mt-5 mx-auto " style="width: 18rem;">
                 <img src="images/american-muscle.png" class="card-img-top w-90 img-fluid" alt="american-muscle">
                 <div class="card-body">
-                    <h5 class="card-title">A car dealership that sells American made muscle cars from all years</h5>
                     <p class="card-text">HTML | CSS | Bootstrap4</p>
                     <a href="https://american-muscle1.netlify.app/" class="btn btn-secondary project-button col-6 mt-4"
                         target="_blank">Preview</a>
@@ -128,19 +116,17 @@
             </div>
         </div>
         <div class="row ">
-            <div class="card col-lg-5 my-3 mx-auto" style="width: 18rem;">
+            <div class="card col-lg-5 mt-5  mx-auto" style="width: 18rem;">
                 <img src="images/hacker-news.png" class="card-img-top w-90 img-fluid" alt="porsche">
                 <div class="card-body">
-                    <h5 class="card-title">A bot that scrapes Hacker news website for articles with 100+ likes</h5>
                     <p class="card-text"> Python </p>
                     <a href="https://github.com/Yankez33/hacker_news" class="btn btn-secondary project-button col-6"
                         target="_blank">Preview</a>
                 </div>
             </div>
-            <div class="card col-lg-5 my-3 mx-auto" style="width: 18rem;">
+            <div class="card col-lg-5 mt-5 mx-auto" style="width: 18rem;">
                 <img src="images/quotes.png" class="card-img-top w-90 img-fluid" alt="quotes">
                 <div class="card-body">
-                    <h5 class="card-title">An app that generates random quotes and let's user tweet them </h5>
                     <p class="card-text">HTML | CSS | Javascript</p>
                     <a href="https://quote-generator1.netlify.app/" class="btn btn-secondary project-button col-6 mt-2"
                         target="_blank">Preview</a>
@@ -148,6 +134,21 @@
             </div>
         </div>
     </div>
+
+    <footer class="container-fluid footer">
+        <div class="row ">
+            <span class="col-7 copyright mt-3 ml-3" id="contact">Copyright &copy 2021. All Rights Reserved</span>
+            <div class=" col-4 social-media mx-auto mt-2 text-right">
+                <a href="https://www.linkedin.com/in/timothy-maycock-3116891aa/" target="_blank"><i
+                        class="fab fa-linkedin 3x social-link text-secondary" id="contact"></i></a>
+                <a href=" https://github.com/Yankez33" target="_blank"><i
+                        class="fab fa-github 3x social-link text-secondary" id="contact"></i></a>
+                <a href=" https://www.instagram.com/yankez/" target="_blank"><i
+                        class="fab fa-instagram 3x social-link text-secondary" id="contact"></i></a>
+            </div>
+
+        </div>
+    </footer>
 
 
 

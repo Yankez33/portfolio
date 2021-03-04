@@ -1,18 +1,22 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
+    padding-top:70px;
+    margin-top:-70px;
 }
+
+ html {
+  scroll-padding-top: 125px; 
+} 
 
 
 /* Navbar */
 .navbar {
-  position: fixed;
-  z-index: 1;
-  background: #252525 !important; 
+  background: #000 !important; 
 }
 
  .nav-link {
-   color: #e8eae6 !important;
+   color: #fff !important;
    margin-right: 70px;
    padding-left: 25px;
  }  
@@ -20,12 +24,17 @@ body {
 .nav-link:hover {
     text-decoration-line: underline;
     color: #931a25 !important; 
-    font-weight: 500;
 }
 
 .navbar-brand {
-  font-size: 24px;
-  color: #e8eae6;
+  font-size: 16px;
+  color: #fff !important;
+}
+
+.navbar-toggler-icon {
+  position: absolute;
+  color: #fff !important;
+  font-size:24px;
 }
 
 /* End of Navbar*/
@@ -37,39 +46,54 @@ body {
 }
 
 .bg-image {
-  position: bottom no-repeat cover;
-  /* margin: -2px; */
-  padding: 0;
-  height: 100%;
+    min-height: calc(100vh - 35px);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(images/bg-image.jpg)center/cover no-repeat fixed;
+    /* position: relative; */
 }
 
 .text {
     position: absolute;
-    top: 15%; 
+    top: 45%; 
     right: 50%;
     transform: translate(50%,-50%);
     font-family: roboto;
     font-size: 55px;
     font-weight: 700;
     color: #f5f5f5;
-    text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191,
-        1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4); 
 }
 
+.text2 {
+    position: absolute;
+    top: 55%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-family: roboto;
+    font-size: 33px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
 
- /* End of Main Section */
+@media (max-width:788px) {
+  .text {
+    font-size: 35px;
+  }
+
+  .text2 {
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+}
+
+@media (max-width:580px) {
+  .text {
+    font-size: 24px;
+  }
+
+  .text2 {
+    font-size: 16px;
+    padding-bottom: 35px;
+}
+}
 
 /* About section */
 
@@ -81,14 +105,19 @@ body {
 .about-pic {
   height: 300px;
   width: 300px;
-  margin-left: 20px;
+  margin-left: 75px;
   border-radius: 10px;
   box-shadow: 0 0 20px black;
 }
 
 .about-text {
-font-size: 24px;
+font-size: 12px;
+}
 
+@media (max-width:768px) {
+  .about_title {
+    margin-left: 40%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -115,57 +144,14 @@ font-size: 24px;
   }
 }
 
-/* Skills Section */
-
-.skills-container {
-      width: 80%;
-      background-color: #ebebeb;
-      border-radius: 20px;
-   }
-
-   .html, .css, .python, .js, .linux {
-      text-align: center;
-      font-size: 14px;
-      font-weight: 300;
-      color: white;
-      border-radius: 20px;
-      line-height: 1;
-   }
-   .html {
-      width: 80%;
-      background-color: #4caf50;
-   }
-   .css {
-      width: 70%;
-      background-color: #2196f3;
-   }
-   .python {
-      width: 65%;
-      background-color: #f44336;
-   }
-   .js {
-      width: 50%;
-      background-color: #808080;
-   }
-
-   .linux {
-      width: 25%;
-      background-color: #f0a500;
-   }
-
-   .projects-container {
-     background-color: #ebebeb;
-   }
-
+/* Portfolio Section */
    .projects-title {
      text-align: center;
-     padding: 15px;
-     font-size:24px;
+     padding-top: 25px;
+     font-size:20px;
    }
 
   .card { 
-    border: 1px solid #000;
-    /* background-color: #fbf7f0; */
     text-align: center;
   }
   
@@ -180,6 +166,51 @@ font-size: 24px;
     background-color: #fff;
     transform:matrix(1.2);
   }
+
+  /*  Footer */
+
+  footer {
+    background: #e8e8e8 !important;
+    height: 50px;
+  }
+
+  .copyright {
+    color: #393e46;
+    font-size:12px;
+    vertical-align: middle;
+  }
+
+  .social-link {
+    width: 50px;
+    font-size: 32px;
+    position: relative;
+    text-align: center;
+  }
+
+  .social-link:hover {
+    color: #0a043c !important;
+  }
+
+  @media (max-width: 768px) {
+    .social-link {
+      width: 40px;
+      font-size: 20px;
+      padding-top: 7px;
+    }
+
+    .copyright {
+      font-size:8px;
+      padding-top: 7px;
+      }
+  }
+
+  @media (max-width: 576px) {
+    .social-link {
+      font-size: 12px;
+      width: 20px;
+}
+  }
+  
 
  
 
